@@ -10,7 +10,7 @@ const Register = () => {
     //const navigate = useNavigate();
     const onSubmit = (value, e) => {
 
-        fetch('http://localhost:5000/volunteers', {
+        fetch('https://volunteer-network-server-ecru.vercel.app/volunteers', {
             method: 'POST',
             headers: {
                 'content-type': 'application/json'

@@ -9,7 +9,7 @@ const AddEvent = () => {
     const { register, handleSubmit } = useForm();
     const navigate = useNavigate();
     const onSubmit = (value) => {
-        fetch('http://localhost:5000/events', {
+        fetch('https://volunteer-network-server-ecru.vercel.app/events', {
             method: 'POST',
             headers: {
                 'content-type': 'application/json'

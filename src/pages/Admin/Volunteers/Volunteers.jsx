@@ -5,7 +5,7 @@ const Volunteers = () => {
     const [volunteers, setVolunteers] = useState([]);
     const [refresh, setRefresh] = useState(false);
     useEffect(() => {
-        fetch('http://localhost:5000/volunteers', {
+        fetch('https://volunteer-network-server-ecru.vercel.app/volunteers', {
             method: 'GET',
             headers: {
                 authorization: `Bearer ${localStorage.getItem('volunteer-access-token')}`

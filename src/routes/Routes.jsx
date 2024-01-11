@@ -21,7 +21,7 @@ const router = createBrowserRouter([
             {
                 path: '/',
                 element: <Home></Home>,
-                loader: () => fetch('http://localhost:5000/totalEvents')
+                loader: () => fetch('https://volunteer-network-server-ecru.vercel.app/totalEvents')
             },
             {
                 path: '/event-details/:id',

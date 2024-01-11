@@ -9,7 +9,7 @@ const MyEvents = () => {
     const { user } = useContext(AuthContext);
     const navigate = useNavigate();
     useEffect(() => {
-        fetch(`http://localhost:5000/bookings?email=${user.email}`, {
+        fetch(`https://volunteer-network-server-ecru.vercel.app/bookings?email=${user.email}`, {
             method: 'GET',
             headers: {
                 authorization: `Bearer ${localStorage.getItem('volunteer-access-token')}`

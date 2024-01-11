@@ -15,7 +15,7 @@ const Events = () => {
     const pageNumbers = [...Array(totalPages).keys()];
 
     useEffect(() => {
-        fetch(`http://localhost:5000/events?currentPage=${currentPage}&itemsPerPage=${itemsPerPage}`)
+        fetch(`https://volunteer-network-server-ecru.vercel.app/events?currentPage=${currentPage}&itemsPerPage=${itemsPerPage}`)
             .then(res => res.json())
             .then(data => {
                 setEvents(data.data);
@@ -46,7 +46,6 @@ const Events = () => {
 
 
             </div>
-            <p>Current Page: {currentPage}</p>
             <div className="flex mt-3 justify-center pb-6">
 
                 {

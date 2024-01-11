@@ -17,7 +17,7 @@ const EventDetails = () => {
         eventTitle: event.eventTitle
     }
     useEffect(() => {
-        fetch(`http://localhost:5000/events/${id}`)
+        fetch(`https://volunteer-network-server-ecru.vercel.app/events/${id}`)
             .then(res => res.json())
             .then(data => {
 
@@ -33,7 +33,7 @@ const EventDetails = () => {
             return
         }
         else {
-            fetch('http://localhost:5000/bookings', {
+            fetch('https://volunteer-network-server-ecru.vercel.app/bookings', {
                 method: 'POST',
                 headers: {
                     'content-type': 'application/json'

@@ -15,7 +15,7 @@ const VolunteerSingle = ({ volunteer, refresh, setRefresh }) => {
             confirmButtonText: "Yes, delete it!"
         }).then((result) => {
             if (result.isConfirmed) {
-                fetch(`http://localhost:5000/volunteers/${_id}`, {
+                fetch(`https://volunteer-network-server-ecru.vercel.app/volunteers/${_id}`, {
                     method: 'DELETE'
                 })
                     .then(res => res.json())
